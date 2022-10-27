@@ -1,0 +1,151 @@
+:root{
+    --main-brand-color:#297ae3;
+    --primary-color: #2a2a33;
+    --secondary-color: white;
+    --light-secondary-color: #b3b4b6;
+    --text-color: #2a2a33;
+    --secondary-text-color: #2e3744;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color)
+    
+}
+
+header {
+    margin: 24px;
+    
+}
+
+h1 { /*bedeutet, dass wir einen kompletten Tag ansprechen*/
+        font-family: Arial, Helvetica, sans-serif
+
+}
+
+
+.center { /*. bedeutet, dass man eine Klasse anspricht*/
+    display: flex;
+    justify-content: center; /*X-Achse*/
+    align-items:center; /*Y-Achse*/
+    }
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    
+}
+
+p {
+    text-align: justify;
+    line-height: 175%;
+}
+
+#teaser {
+    width: 100%;
+    height: 300px;
+}
+
+#teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /*Das Bild passt sich innerhalb des Containers an*/
+}
+
+@media screen and (min-width:800px) { /*media=Zustand vom Screen - wenn der Bildschirm mindestens eine Breite von 800px hat, dann:*/
+    #teaser {
+        height: 400px;
+    }
+
+    
+}
+
+footer ul, nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+footer ul li a, nav ul li a {
+    font-weight: 600;
+    padding: 24px;
+    color: #2a2a33;
+    text-decoration: none;
+
+}
+
+footer ul li a:hover, nav ul li a:hover { 
+    text-decoration-line:underline;
+
+
+}
+
+section {
+    padding: 50px 16px;
+    margin-left: auto;
+    margin-right: auto; /* Der Abstand wird automatisch gehalten -  */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px;;
+    border: 1px solid #2a2a33;
+    width:fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+
+
+}
+.button:hover {
+    background-color:#2a2a33;
+    color: white;
+    transition: 150ms ease-in-out;
+
+}
+
+
+.about-me-container {
+    width: 700px;
+}
+
+#about-me img {
+    width: 300px;
+    max-width: 90%;
+    border: 5px solid var(--secondary-color);
+}
+
+#service-section {
+    max-width: 1000px;
+}
+.flex-container {
+    display:flex;
+    gap: 40px;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--main-brand-color);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    width: 260px;
+}
+
+.card * {
+    text-align: center;
+}
